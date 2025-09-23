@@ -1,0 +1,36 @@
+<div class="news-component ${properties.theme}">
+    
+    <!-- Section Heading -->
+    <h2 class="news-heading">
+        ${properties.sectionHeading}
+    </h2>
+
+    <!-- Description -->
+    <p class="news-description">
+        ${properties.description}
+    </p>
+
+    <!-- Featured Image -->
+    <sly data-sly-test="${properties.featuredImage}">
+        <div class="news-image">
+            <img src="${properties.featuredImage @ context='uri'}" 
+                 alt="${properties.sectionHeading}"/>
+        </div>
+    </sly>
+
+    <!-- Tags -->
+    <sly data-sly-test.tags="${properties['cq:tags']}">
+        <div class="news-tags">
+            <sly data-sly-list.tag="${tags}">
+                <span class="tag">${tag}</span>
+            </sly>
+        </div>
+    </sly>
+
+    <!-- Featured page -->
+    <sly data-sly-test="${properties.Featuredpage}">
+        <div class="featured-page">Featured</div>
+    </sly>
+   <img src=  "${properties.cardimage}" alt="hi" width="500px" height="200px"><br>
+    <img src= "${properties.defaultimage}" alt="hello"><br>
+</div>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="newComponent"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/layout/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <theme
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Theme"
+                        name="./theme">
+                        <items jcr:primaryType="nt:unstructured">
+                            <light
+                                jcr:primaryType="nt:unstructured"
+                                text="Light"
+                                value="light"/>
+                            <dark
+                                jcr:primaryType="nt:unstructured"
+                                text="Dark"
+                                value="dark"/>
+                        </items>
+                    </theme>
+                    <sectionHeading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Section Heading"
+                        name="./sectionHeading"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Description"
+                        maxlength="300"
+                        name="./description"/>
+                    <tags
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                        fieldLabel="Tags"
+                        multiple="{Boolean}true"
+                        name="./cq:tags"/>
+                    <Featured_x0020_Page
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Featured Image"
+                        multiple="{Boolean}true"
+                        name="./featuredImage"/>
+                    <Card_x0020_image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="cardimage"
+                        multiple="{Boolean}true"
+                        name="./cardimage"/>
+                    <Default_x0020_image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="defaultimage"
+                        multiple="{Boolean}true"
+                        name="./defaultimage"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
