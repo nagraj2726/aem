@@ -1,0 +1,20 @@
+<div class="upstream-component">
+
+
+    <div class="textfield">
+        <strong>Textfield:</strong> ${properties.textfield}
+    </div>
+	<div class="image" 
+        <strong>Image:</strong><br>
+        <img  src= "${properties.pathfield}" alt="hi" width="400px" height="200px"> <br>
+
+    </div>
+
+    <div class="richtext">
+        <strong>RichText:</strong>
+        <div data-sly-test="${properties.richtext}">
+            ${properties.richtext @ context='html'}
+        </div>
+    </div>
+
+</div>

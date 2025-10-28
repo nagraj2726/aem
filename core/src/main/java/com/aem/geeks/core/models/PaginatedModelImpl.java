@@ -1,9 +1,7 @@
-package com.aem.geeks;
+package com.aem.geeks.core.models;
 
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
-import com.aem.geeks.core.models.PaginatedModel;
-import com.aem.geeks.core.models.ValueMapValue;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 import org.apache.sling.api.SlingHttpServletRequest;
