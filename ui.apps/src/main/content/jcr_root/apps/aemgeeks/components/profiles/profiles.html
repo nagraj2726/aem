@@ -1,0 +1,12 @@
+<div class="profile">
+  <h2>${properties.name}</h2>
+
+  <sly data-sly-test="${properties.image}">
+    <img src="${properties.image}" alt="${properties.name}" style="max-width:300px; border-radius: 8px;">
+  </sly>
+
+
+  <sly data-sly-test="${!properties.image}">
+    <p>No image selected.</p>
+  </sly>
+</div>

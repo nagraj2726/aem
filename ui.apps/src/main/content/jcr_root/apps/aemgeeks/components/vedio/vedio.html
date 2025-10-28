@@ -1,0 +1,18 @@
+<div class="video-transcript">
+    <!-- Video Title -->
+    <h2>${properties.title}</h2>
+
+    <!-- Video Element -->
+    <div class="video-wrapper">
+        <video width="640" height="360" controls>
+            <source src="${properties.videoPath}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Transcript Section -->
+    <div class="transcript">
+        <h3>Transcript</h3>
+        <p>${properties.transcriptText}</p>
+    </div>
+</div>

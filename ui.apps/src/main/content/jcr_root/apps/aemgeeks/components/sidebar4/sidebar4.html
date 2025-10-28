@@ -1,0 +1,29 @@
+<h5> SIDE BAR COMPONENT</h5>
+<div data-sly-use.obj="com.aem.geeks.core.models.Sidebar1">
+
+<!-- Header -->
+  <div>${obj.logopath}</div>
+  <div><img src="${obj.logomobileimage}" alt=""/></div>
+  <div><a href="${obj.logolink}">${obj.logolink}</a></div>
+  <div>${obj.enableswitch}</div>
+
+  <!-- Region -->
+  <div>${obj.country}</div>
+
+  <!-- Header Links -->
+  <div data-sly-list.item="${obj.day1}">
+    <div>${item.name}</div>
+    <div>${item.image}</div>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <div data-sly-list.item="${obj.day2}">
+    <div>${item.desktopicon}</div>
+    <div>${item.mobileicon}</div>
+
+    <div data-sly-list.nest="${item.nested}">
+      <div>${nest.navigationurl}</div>
+    </div>
+  </div>
+
+</div>

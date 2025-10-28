@@ -1,0 +1,24 @@
+.teaser {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    color: #b30000;
+    font-weight: bold;
+}
+
+
+.image-content img {
+    max-width: 300px;
+    height: 300px;
+    border: 1px solid #ddd;
+}

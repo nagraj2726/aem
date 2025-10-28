@@ -1,0 +1,16 @@
+<h4>Task2</h4>
+
+<div data-sly-use.model=com.aem.geeks.core.models.Carousel>
+
+${model.text}<br>
+ <div data-sly-list.item11=${model.bookdetailswithmap}>
+     ${item11.textfield} <br>
+     <img  src= "${item11.pathfield}" alt="hi" width="400px" height="200px"> <br>
+
+
+   <div data-sly-list.ramu=${item11.bookdetailswithwriter}>
+   ${ramu.title}<br>
+   </div>
+     </div>
+
+</div>

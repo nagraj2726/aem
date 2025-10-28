@@ -1,0 +1,29 @@
+<div class="related-insights">
+  <h2 class="related-insights__title">${properties.sectionTitle}</h2>
+
+  <div class="related-insights__carousel">
+    <div class="related-insights__card">
+      <img src="${properties.thumbnail}" alt="${properties.title}" class="related-insights__image"/>
+
+      <div class="related-insights__meta">
+        <span>${properties.date}</span>
+        <span>${properties.duration}</span>
+      </div>
+
+      <h3 class="related-insights__heading">${properties.title}</h3>
+      <p class="related-insights__desc">${properties.description}</p>
+      <p class="related-insights__authors">${properties.authors}</p>
+
+      <div class="related-insights__cta">
+        <a href="${properties.link}" class="related-insights__read">${properties.ctaLabel}</a>
+        <button class="related-insights__share" aria-label="Share this insight">🔗</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='aemgeeks.related'}">
+</sly>

@@ -1,0 +1,33 @@
+<!-- people-hero.html -->
+<div class="people-hero">
+  <div class="people-hero__container">
+    <!-- Back link -->
+
+
+    <!-- Text content -->
+    <div class="people-hero__text">
+      <h1 class="people-hero__name" aria-label="Name">${properties.name}</h1>
+      <p class="people-hero__title">${properties.title}</p>
+
+      <p class="people-hero__location" data-sly-test="${properties.location}">
+        ${properties.location}
+      </p>
+      <p class="people-hero__credentials" data-sly-test="${properties.credentials}">
+        ${properties.credentials}
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="people-hero__image-wrapper">
+      <img
+        src="${properties.imagePath}"
+        alt="Headshot of ${properties.name}"
+        class="people-hero__image"
+      />
+    </div>
+  </div>
+</div>
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='aemgeeks.peoplehero'}">
+</sly>
