@@ -1,0 +1,33 @@
+<sly data-sly-use.model="com.aem.geeks.core.models.MultifieldModel" />
+
+<ul class="horizontal-list">
+    <sly data-sly-list="${model.multiField}">
+        <li>
+            <!-- One link wraps both text and image -->
+            <a href="${item.pField}" target="_blank">
+                ${item.tField} <br>
+                <img src="${item.imgField}" alt="Image" width="400px" height="200px"/>
+            </a>
+        </li>
+    </sly>
+</ul>
+
+<style>
+    .horizontal-list {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .horizontal-list a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .horizontal-list a:hover {
+        color: blue;
+    }
+</style>
