@@ -1,3 +1,2 @@
-#base=show-hide-fields
-show-hide-fields.js
-
+#base=js
+image.js

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Image"
+    jcr:title="Image Component"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <extraClientlibs
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/foundation/includeclientlibs"
-        categories="[myproject.image]"/>
+        categories="[aemgeeks.image]"/>
     <content
         jcr:primaryType="nt:unstructured"
-        sling:resourceType="granite/ui/components/foundation/container">
+        sling:resourceType="granite/ui/components/coral/foundation/container">
         <layout
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            sling:resourceType="granite/ui/components/coral/foundation/layouts/tabs"
             type="nav"/>
         <items jcr:primaryType="nt:unstructured">
             <tab1
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Properties"
-                sling:resourceType="granite/ui/components/foundation/container">
+                sling:resourceType="granite/ui/components/coral/foundation/container">
                 <layout
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
@@ -27,21 +27,23 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <imageSrc
+                            <image
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                sling:resourceType="granite/ui/components/foundation/form/pathfeild"
                                 allowUpload="{Boolean}true"
-                                fieldDescription="choose an image from DAM"
+                                fieldDescription="Choose an image from DAM"
                                 fieldLabel="Image"
-                                name="./image"
+                                fileNameParameter="./fileName"
+                                name="./imagePath"
                                 rootPath="/content/dam"/>
                             <altText
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                fieldDescription="Optional: will be automatically set based on dc:title"
+                                fieldDescription="Enter an image description (Alt Text)"
                                 fieldLabel="Alt Text"
                                 id="alt-text-field"
-                                name="./altText"/>
+                                name="./altText"
+                                required="{Boolean}false"/>
                         </items>
                     </columns>
                 </items>

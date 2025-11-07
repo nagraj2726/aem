@@ -1,0 +1,24 @@
+<sly data-sly-use.userModel="com.aem.geeks.core.models.UserModel">
+
+    <div class="user-component">
+        <h2>User Details</h2>
+
+        <div class="user-field">
+            <strong>ID:</strong> ${userModel.id}
+        </div>
+
+        <div class="user-field">
+            <strong>Name:</strong> ${userModel.name}
+        </div>
+
+        <div class="user-field">
+            <strong>Gender:</strong> ${userModel.gender}
+        </div>
+
+        <div class="user-field">
+            <strong>Address:</strong>
+            <p>${userModel.address}</p>
+        </div>
+    </div>
+
+</sly>

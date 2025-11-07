@@ -1,0 +1,25 @@
+<sly data-sly-use.model="com.aem.geeks.core.models.StickyCtaFooterModel">
+
+    <cq:includeClientLib categories="aemgeeks.stickyctafooter"/>
+
+    <div class="sticky-cta-footer" id="stickyCtaFooter">
+        <div class="cta-container">
+
+            <a href="${model.primaryLink}" class="cta primary">
+                <span class="icon">💻</span>
+                <span>${model.primaryCta}</span>
+            </a>
+
+            <div class="cta secondary">
+                <span class="icon">📞</span>
+                <span>${model.secondaryCta}</span>
+                <a href="tel:${model.phoneEast}" class="phone-number">${model.phoneWest}</a>
+            </div>
+
+            <sly data-sly-test="${model.showClose}">
+                <button class="cta-close" id="ctaCloseBtn">&times;</button>
+            </sly>
+
+        </div>
+    </div>
+</sly>

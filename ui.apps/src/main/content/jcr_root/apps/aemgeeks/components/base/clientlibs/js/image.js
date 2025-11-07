@@ -2,13 +2,12 @@
     "use strict";
 
     $document.on("dialog-ready", function () {
-        var $pathField = $("#image-path-selector");
+        var $imageField = $("[name='./imagePath']");
         var $altTextField = $("#alt-text-field").closest(".coral-Form-fieldwrapper");
 
-        function toggleFields() {
-            var pathValue = $pathField.val();
-
-            if (pathValue && pathValue.trim() !== "") {
+        function toggleAltText() {
+            var imageValue = $imageField.val();
+            if (imageValue && imageValue.trim() !== "") {
                 $altTextField.show();
             } else {
                 $altTextField.hide();
@@ -16,10 +15,10 @@
         }
 
         // Initial check
-        toggleFields();
+        toggleAltText();
 
-        // When image path changes
-        $pathField.on("change", toggleFields);
+        // On change event
+        $imageField.on("change", toggleAltText);
     });
 
 })(jQuery, jQuery(document));
