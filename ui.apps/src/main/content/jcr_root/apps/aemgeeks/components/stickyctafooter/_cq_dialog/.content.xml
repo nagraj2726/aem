@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Sticky CTA Footer Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <region
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Region"
+                                name="./region"
+                                value="east">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <east
+                                        jcr:primaryType="nt:unstructured"
+                                        text="East"
+                                        value="east"/>
+                                    <west
+                                        jcr:primaryType="nt:unstructured"
+                                        text="West"
+                                        value="west"/>
+                                </items>
+                            </region>
+                            <primaryCta
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Primary CTA Label"
+                                name="./primaryCta"
+                                value="Check Availability"/>
+                            <primaryLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                allowNonExistingPaths="{Boolean}true"
+                                fieldLabel="Primary CTA Link"
+                                name="./primaryLink"
+                                rootPath="/content"/>
+                            <secondaryCta
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Secondary CTA Label"
+                                name="./secondaryCta"
+                                value="Call to Order"/>
+                            <secondaryLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                allowNonExistingPaths="{Boolean}true"
+                                fieldLabel="Secondary CTA Link"
+                                name="./secondaryLink"
+                                rootPath="/content"/>
+                            <phoneEast
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Phone Number (East)"
+                                name="./phoneEast"
+                                value="866-347-4784"/>
+                            <phoneWest
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Phone Number (West)"
+                                name="./phoneWest"
+                                value="877-694-9474"/>
+                            <showClose
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                checked="{Boolean}true"
+                                name="./showClose"
+                                text="Show Close Button"
+                                value="true"/>
+                            <phoneNumber
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/textfield"
+                                fieldLabel="Phone Number"
+                                name="./phoneNumber"/>
+                        </items>
+                    </general>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
