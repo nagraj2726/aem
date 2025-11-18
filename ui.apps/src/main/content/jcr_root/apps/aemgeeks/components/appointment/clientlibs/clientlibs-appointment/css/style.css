@@ -1,0 +1,583 @@
+
+@import '/font/fonts.css';
+
+/*--Appointment Section---*/
+
+#appointment-section {
+    font-family: 'Usual', sans-serif !important;
+    margin-top: 4rem;
+    color: #142032;
+    font-weight: 400;
+}
+
+#appointment-section h2 {
+    font-weight: 800 !important;
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 2.25rem;
+}
+
+#appointment-section p.large {
+    font-size: 1.5rem;
+    color:#50535A !important;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+#appointment-section p.mt-3 {
+    margin-top: 1rem;
+}
+#appointment-section .survey-appointment{
+    border-radius: 10px;
+    color: #112F0C;
+    background: #CAEFC8;
+    padding:16px;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 36px;
+    border: 1px solid #51AF48
+}
+#appointment-section .survey-appointment .survey-appointment-text{
+    display: grid;
+    grid-template-columns: 36px 1fr;
+}
+#appointment-section .survey-appointment .survey-h {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+#appointment-section .survey-appointment .survey-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width:767px) {
+
+    #appointment-section{
+        margin-top: .5rem;
+    }
+    #appointment-section h2 {
+        font-weight: 800 !important;
+        margin-bottom: 0;
+        line-height: 1;
+        font-size: 1.5rem !important;
+    }
+
+    #appointment-section p.large {
+        font-size: 1rem !important;
+    }
+    #appointment-section p.mt-3{
+        margin-top: 12px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+
+}
+
+@media (min-width: 1400px) {
+
+    #appointment-section .container,
+    #appointment-section .container-lg,
+    #appointment-section .container-md,
+    #appointment-section .container-sm,
+    #appointment-section .container-xl,
+    #appointment-section .container-xxl {
+        max-width: 1280px;
+    }
+
+    #appointment-section .container {
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width: 834px) and (max-width:991px) {
+    #appointment-section .container {
+        max-width: 786px;
+    }
+
+}
+
+
+/*---Form Section---*/
+
+
+#form-block{
+    font-family: 'Usual', sans-serif !important;
+    margin-top: 3.5rem;
+    color: #142032;
+    font-weight: 400;
+}
+
+#form-block .form-section {
+    background-color: #142032 !important;
+    border-radius: 1.5rem;
+    background: url(/images/pattern_.png) no-repeat;
+    background-position: right top;
+    padding: 2rem 0;
+    color: white;
+}
+
+
+#form-block .form-section hr {
+    margin: 2rem 0;
+    border-color: #ababab;
+}
+
+#form-block .unique-ref {
+    max-width: 21.25rem;
+    padding: 0 2rem;
+    box-sizing: content-box;
+}
+
+#form-block .unique-ref .form-label {
+    color: #ffffff;
+    margin-bottom: .25rem;
+    line-height: 27px;
+    width: 275px;
+}
+
+#form-block .important-info {
+    padding: 0 2rem !important;
+}
+
+#form-block .important-info strong {
+ 
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.1px;
+
+}
+
+#form-block .important-info ul {
+    padding-left: 1.5rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.1px;
+
+}
+
+#form-block a.text-light{
+ 
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0px;
+vertical-align: middle;
+text-decoration: underline !important;
+color: white !important;
+}
+
+#form-block .unique-ref input {
+    background: white;
+    border-radius:22px;
+    height: 42;
+    gap: 10px;
+    border-radius: 22px;
+    padding-top: 9px;
+    padding-right: 19px;
+    padding-bottom: 9px;
+    padding-left: 19px;
+
+}
+
+#form-block .unique-ref input::placeholder {
+    color: #ABABAB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+}
+
+#form-block .line-height-1 {
+    line-height: 1;
+}
+
+#form-block .fw-700 {
+    font-weight: 700 !important;
+}
+#form-block .btn {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+justify-content: space-between;
+border-radius: 60px;
+padding-top: 14px;
+padding-right: 16px;
+padding-bottom: 14px;
+padding-left: 16px;
+height: 47px;
+
+}
+#form-block .btn-success {
+    background-color: #3EA66C;
+    border-color: #3EA66C;
+    margin-top: 1.5rem;
+}
+#form-block .btn-success path{
+    stroke: white;
+}
+#form-block .btn-success:hover, #form-block .btn-success:active, #form-block .btn-success.acive, #form-block .btn-success:focus{
+    background-color: #2f8556;
+    border-color: #2f8556;
+}
+
+#form-block .appointment-date-sec {
+    max-width: 804px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+#form-block .appointment-date-sec.new-appointment {
+    max-width: 746px;
+}
+#form-block .select-ap-h {
+    font-family: Usual;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 16px;
+}
+#form-block .date-selection {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1.5rem;
+}
+#form-block .date-selection > p{
+    font-family: Usual;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0px;
+vertical-align: middle;
+color:#50535A;
+margin-bottom: 12px;
+
+}
+#form-block .date-box{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    gap: 4px;
+    flex-wrap: nowrap;
+    padding: 0.594rem 0;
+    position: relative;
+}
+#form-block .date-box-item{
+    min-width: 65px;
+    min-height: 69px;
+    border-radius: 8px;
+    padding: 7px;
+    color:#142032;
+    border: 2px solid #142032;
+    text-align: center;
+    cursor: pointer;
+}
+#form-block .date-box-item.disabled{
+    background: #EFEFEF;
+    border: 2px solid #BDBDBD;
+    color: #929292;
+}
+#form-block .date-box-item.active{
+    background: #142032;
+    border: 2px solid #142032;
+    color: white;
+}
+#form-block .date-box-date{
+font-weight: 400;
+font-size: 22px;
+line-height: 17px;
+letter-spacing: 0;
+
+}
+#form-block  .date-box-month{
+font-weight: 400;
+font-size: 14px;
+line-height: 11px;
+letter-spacing: 0;
+margin-top:4px;
+text-transform: uppercase;
+}
+#form-block .date-box-days{
+    font-family: Usual;
+font-weight: 400;
+font-size: 12px;
+line-height: 9px;
+letter-spacing: 0%;
+color: #4F7EB5;
+margin-top: 8px;
+}
+#form-block .date-box-item.disabled  .date-box-days{
+    color: #929292;
+}
+#form-block  .date-box-gradient{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, #FFFFFF 100%);
+    display: flex;
+    position: absolute;
+    right: 0;
+    top:0;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 100%;
+    cursor: pointer;
+}
+#form-block .book-this-appointment {
+    margin-top: 2rem;
+    max-width: 339px;
+    width: 100%;
+}
+#form-block .book-this-appointment {
+    margin-top: 2rem;
+    max-width: 340px;
+    width: 100%;
+}
+#form-block .book-this-appointment:disabled {
+    background: #E7E7E8;
+    color: #898B8F;
+    border-color: #898B8F;
+    opacity: 1;
+}
+
+#form-block .book-this-appointment:disabled path{
+    stroke: #898B8F;
+}
+
+#form-block .select-slot{
+    margin-top: 24px;
+    color: #50535A;
+}
+#form-block .select-slot-heading{
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+letter-spacing: 0px;
+vertical-align: middle;
+margin-bottom: 8px;
+}
+#form-block .select-slot-sec{
+    display: flex;
+    gap: 20px;
+}
+#form-block .select-slot-btn{
+    max-width: 310px;
+    width: 100%;
+    height: 41px;
+    gap: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #142032;
+    font-family: Usual;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    background:white;
+    transition: all .3s;
+}
+#form-block .select-slot-btn.active, #form-block .select-slot-btn:hover, #form-block .select-slot-btn:active{
+    background-color: #142032;
+    color: white;
+}
+
+
+#form-block .appointment-date-sec {
+    max-width: 804px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+#form-block .appointment-date-sec.new-appointment {
+    max-width: 746px;
+}
+
+#form-block .span-text {
+    line-height: 20px;
+    color: #142032;
+}
+
+#form-block .span-text span {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#form-block .new-appointment-date {
+    background: #F2F9FF;
+    padding: .75rem;
+    border-radius: .75rem;
+    color: #142032;
+
+}
+
+#form-block .new-appointment-date h2 {
+    font-weight: 350;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#form-block .new-appointment-date h5 {
+    font-family: Usual;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0;
+
+}
+
+#form-block .book-this-appointment {
+    margin-top: 2rem;
+    max-width: 340px;
+    width: 100%;
+}
+#form-block .btn-outline-dark{
+    background: #fff;
+    border-color: #142032;
+    color: #142032;
+    font-weight: 400;
+}
+#form-block .btn-outline-dark:hover, #form-block .btn-outline-dark:active, #form-block .btn-outline-dark.active{
+    background:#142032 ;
+    border-color: #142032;
+    color: #fff;
+}
+#form-block .btn-outline-dark:hover path, #form-block .btn-outline-dark:active path, #form-block .btn-outline-dark.active path{
+    stroke: #fff;
+}
+
+
+
+.error-sec {
+    background: url(/images/pattern_.png) no-repeat;
+    background-position: right top;
+    padding-top: 120px;
+    padding-bottom: 208px;
+    margin-top: 39px;
+}
+
+.error-sec .error-sec__text {
+    max-width: 955px;
+}
+
+.error-sec h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 0px;
+    margin-top: 20px;
+
+}
+
+.error-sec p {
+    margin-bottom: 2.25rem;
+}
+
+
+
+
+@media (max-width:767px){
+    #form-block .unique-ref {
+    
+        padding: 0 1rem;
+        box-sizing: content-box;
+    }
+    #form-block .important-info{
+        padding: 0 1rem !important;
+    }
+    #form-block .select-slot-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    #form-block .select-slot-sec{
+
+        gap: 8px;
+    }
+    #form-block .select-slot-btn{
+        max-width: 100%;
+    }
+    #form-block .book-this-appointment{
+        max-width: 100%;
+    }
+    .error-sec h2 {
+        font-family: Usual;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+        letter-spacing: 0px;
+    }
+
+    .error-sec {
+        background: url(/images/pattern_.png) no-repeat;
+        background-position: right top;
+        padding-top: 128px;
+        padding-bottom: 128px;
+        margin-top: 0px;
+        background-size: 272px;
+    }
+}
+
+
+@media only screen and (min-width: 834px) and (max-width: 991px) {
+    #form-block .form-section {
+        background-size: 275px auto;
+    }
+    #form-block .container {
+        max-width: 786px;
+    }
+}
+
+@media (max-width: 991px) {
+    #form-block{
+        margin-top: 2.25rem;
+    }
+    #form-block .form-section {
+        background-size: 60%;
+        background-position: calc(100% + 2rem) -2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    #form-block .container,
+    #form-block .container-lg,
+    #form-block .container-md,
+    #form-block .container-sm,
+    #form-block .container-xl,
+    #form-block .container-xxl {
+        max-width: 1280px !important;
+    }
+
+    #form-block .container {
+        padding: 0;
+    }
+
+}

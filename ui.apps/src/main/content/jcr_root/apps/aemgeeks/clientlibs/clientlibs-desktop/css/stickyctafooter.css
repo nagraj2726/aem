@@ -1,0 +1,72 @@
+/* ---- Sticky CTA Full Wrapper ---- */
+.sticky-cta-footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    z-index: 99999;
+}
+
+/* ---- Force 50–50 Split ---- */
+.sticky-cta-footer .cta-btn {
+    flex: 0 0 50%;      /* EXACT HALF */
+    width: 50%;         /* EXACT HALF */
+    min-width: 0;       /* allows internal shrink */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 12px;
+    height: 100%;
+    white-space: nowrap;
+}
+
+/* ---- Orange Button ---- */
+.sticky-cta-footer .availability {
+    background: #ff6a00;
+    color: #ffffff;
+}
+
+/* ---- White Button ---- */
+.sticky-cta-footer .order {
+    background: #ffffff;
+    color: #0050d5;
+    border-left: 2px solid #f1f1f1;
+}
+
+/* ---- Icons ---- */
+.sticky-cta-footer .icon {
+    font-size: 22px;
+}
+
+.sticky-cta-footer .order-number {
+    margin-right: 6px;
+    color: #0050d5;
+    font-weight: 600;
+    white-space: nowrap;
+}
+/* right CTA looks like a link (blue, no underline) */
+.call-order-link,
+.call-order-link * {
+    text-decoration: none !important;
+    color: #0050d5 !important;
+}
+
+/* center everything on right */
+.sticky-cta-footer .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
